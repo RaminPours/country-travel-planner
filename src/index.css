@@ -1,0 +1,127 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: #000000;
+}
+
+.layout {
+  padding: 14px; 
+  max-width: 1000px; 
+  margin: 0 auto;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.countries-grid a {
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+}
+
+.country-detail {
+  padding: 20px;
+  height: 100vh;
+  color: white;
+}
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.fav-card {
+  background-color: black;
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(165, 159, 159, 0.74);
+  text-align: center;
+  color: white;
+}
+
+.fav-card img {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  max-width: 140px;
+  margin: 0 auto;
+}
+
+
+.fav-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 700px) {
+  .fav-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.favorite-button {
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+  background-color: #40e2009d;
+  border: none;
+}
+
+.book-btn, .remove-btn{
+  background-color: #52fa059d;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: larger;
+}
+
+.navbar{
+  display: flex;
+  background-color: #1a5dc9;
+  padding: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  margin: 0 auto;
+  font-size: larger;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.main-page{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+h1{
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
